@@ -1,0 +1,489 @@
+* {
+    outline: 0
+}
+
+html {
+    background-color: #fff;
+    font-size: 62.5%;
+    background-repeat: repeat;
+    scroll-behavior: smooth
+}
+
+
+.hero {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.video-box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 88vh
+}
+
+@supports(-webkit-touch-callout:none) {
+    .video-box {
+        height: -webkit-fill-available
+    }
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
+@media(max-width: 450px) {
+    .video {
+        height:100%
+    }
+}
+
+.overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: ""
+}
+
+.text-box {
+    width: 60%;
+    max-width: 550px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
+.hero h1 {
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 50px;
+    text-align: center;
+    color: #fff
+}
+
+.hero h2 {
+    width: 90%;
+    margin: 60px auto 0
+}
+
+@media(max-width: 450px) {
+    .hero h2 {
+        width:90%;
+        margin: 40px auto 0
+    }
+}
+
+.yycountdown-box {
+    margin: 0;
+    color: #000
+}
+
+#wrapper #timer .yycountdown-box span {
+    color: #000!important
+}
+
+#timer .yycountdown-box .yyc-day-text {
+    color: #000!important;
+    margin: 0 30px 0 0
+}
+
+#timer .yycountdown-box .yyc-hou-text {
+    color: #000!important;
+    margin: 0 30px 0 0
+}
+
+#timer .yycountdown-box .yyc-min-text {
+    color: #000!important;
+    margin: 0 30px 0 0
+}
+
+@-webkit-keyframes logo-01 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    65% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes logo-01 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    65% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes logo-01 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    65% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes logo-01 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    65% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes logo-02 {
+    0% {
+        -webkit-transform: translate(25%,50%) scale(0.1) rotate(90deg);
+        transform: translate(25%,50%) scale(0.1) rotate(90deg)
+    }
+
+    25% {
+        -webkit-transform: translate(25%,50%) scale(0.3) rotate(0deg);
+        transform: translate(25%,50%) scale(0.3) rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: translate(0%) scale(0.5);
+        transform: translate(0%) scale(0.5);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    75% {
+        -webkit-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+
+    100% {
+        -webkit-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+}
+
+@-moz-keyframes logo-02 {
+    0% {
+        -moz-transform: translate(25%,50%) scale(0.1) rotate(90deg);
+        transform: translate(25%,50%) scale(0.1) rotate(90deg)
+    }
+
+    25% {
+        -moz-transform: translate(25%,50%) scale(0.3) rotate(0deg);
+        transform: translate(25%,50%) scale(0.3) rotate(0deg)
+    }
+
+    50% {
+        -moz-transform: translate(0%) scale(0.5);
+        transform: translate(0%) scale(0.5);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    75% {
+        -moz-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+
+    100% {
+        -moz-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+}
+
+@-o-keyframes logo-02 {
+    0% {
+        -o-transform: translate(25%,50%) scale(0.1) rotate(90deg);
+        transform: translate(25%,50%) scale(0.1) rotate(90deg)
+    }
+
+    25% {
+        -o-transform: translate(25%,50%) scale(0.3) rotate(0deg);
+        transform: translate(25%,50%) scale(0.3) rotate(0deg)
+    }
+
+    50% {
+        -o-transform: translate(0%) scale(0.5);
+        transform: translate(0%) scale(0.5);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    75% {
+        -o-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+
+    100% {
+        -o-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+}
+
+@keyframes logo-02 {
+    0% {
+        -webkit-transform: translate(30%,50%) scale(0) rotate(90deg);
+        -moz-transform: translate(30%,50%) scale(0) rotate(90deg);
+        -o-transform: translate(30%,50%) scale(0) rotate(90deg);
+        transform: translate(30%,50%) scale(0) rotate(90deg)
+    }
+
+    25% {
+        -webkit-transform: translate(30%,50%) scale(0.2) rotate(0deg);
+        -moz-transform: translate(30%,50%) scale(0.2) rotate(0deg);
+        -o-transform: translate(30%,50%) scale(0.2) rotate(0deg);
+        transform: translate(30%,50%) scale(0.2) rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: translate(0%) scale(0.4);
+        -moz-transform: translate(0%) scale(0.4);
+        -o-transform: translate(0%) scale(0.4);
+        transform: translate(0%) scale(0.4);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    75% {
+        -webkit-transform: translate(0%) scale(1);
+        -moz-transform: translate(0%) scale(1);
+        -o-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+
+    100% {
+        -webkit-transform: translate(0%) scale(1);
+        -moz-transform: translate(0%) scale(1);
+        -o-transform: translate(0%) scale(1);
+        transform: translate(0%) scale(1)
+    }
+}
+
+@-webkit-keyframes logo-03 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    75% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes logo-03 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    75% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes logo-03 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    75% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes logo-03 {
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    75% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.svg-09,.svg-10,.svg-11,.svg-12,.svg-13 {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    opacity: 0;
+    -webkit-animation: logo-01 6s ease .2s forwards;
+    -moz-animation: logo-01 6s ease .2s forwards;
+    -o-animation: logo-01 6s ease .2s forwards;
+    animation: logo-01 6s ease .2s forwards
+}
+
+.svg-07,.svg-08 {
+    -webkit-transform: translate(50%,50%) scale(0.2) rotate(90deg);
+    -moz-transform: translate(50%,50%) scale(0.2) rotate(90deg);
+    -ms-transform: translate(50%,50%) scale(0.2) rotate(90deg);
+    -o-transform: translate(50%,50%) scale(0.2) rotate(90deg);
+    transform: translate(50%,50%) scale(0.2) rotate(90deg);
+    -webkit-animation: logo-02 6s ease .2s forwards;
+    -moz-animation: logo-02 6s ease .2s forwards;
+    -o-animation: logo-02 6s ease .2s forwards;
+    animation: logo-02 6s ease .2s forwards
+}
+
+.svg-01,.svg-02,.svg-03,.svg-04,.svg-05,.svg-06 {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    opacity: 0;
+    -webkit-animation: logo-03 7s ease .2s forwards;
+    -moz-animation: logo-03 7s ease .2s forwards;
+    -o-animation: logo-03 7s ease .2s forwards;
+    animation: logo-03 7s ease .2s forwards
+}
+
+.st0 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-miterlimit: 10
+}
+
+.online-btn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.online-btn img {
+    width: 37px;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .hero {
+        margin-bottom: 15px;
+    }
+    .video-box {
+        height: 80vh
+    }
+}
