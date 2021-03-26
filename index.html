@@ -518,8 +518,10 @@
 
     function stopload() {
       $('#wrap').css('display', 'block');
-      $('#loader-bg').delay(1200).fadeOut(1700);
+      $('#loader-bg').delay(1200).fadeOut(1700, () => $('body').removeClass('no-scroll'));
       $('#loader').delay(800).fadeOut(500);
+      var svgClass = document.querySelectorAll('.svg-09,.svg-10,.svg-11,.svg-12,.svg-13,.svg-07,.svg-08,.svg-01,.svg-02,.svg-03,.svg-04,.svg-05,.svg-06');
+      svgClass.forEach(element => element.classList.add('animate-svg'));
     }
   </script>
 
