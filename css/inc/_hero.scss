@@ -422,7 +422,7 @@ html {
     }
 }
 
-.svg-09,.svg-10,.svg-11,.svg-12,.svg-13 {
+.svg-09.animate-svg,.svg-10.animate-svg,.svg-11.animate-svg,.svg-12.animate-svg,.svg-13.animate-svg {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -434,7 +434,7 @@ html {
     animation: logo-01 6s ease .2s forwards
 }
 
-.svg-07,.svg-08 {
+.svg-07.animate-svg,.svg-08.animate-svg {
     -webkit-transform: translate(50%,50%) scale(0.2) rotate(90deg);
     -moz-transform: translate(50%,50%) scale(0.2) rotate(90deg);
     -ms-transform: translate(50%,50%) scale(0.2) rotate(90deg);
@@ -446,7 +446,7 @@ html {
     animation: logo-02 6s ease .2s forwards
 }
 
-.svg-01,.svg-02,.svg-03,.svg-04,.svg-05,.svg-06 {
+.svg-01.animate-svg,.svg-02.animate-svg,.svg-03.animate-svg,.svg-04.animate-svg,.svg-05.animate-svg,.svg-06.animate-svg {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
