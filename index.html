@@ -500,10 +500,11 @@
       var h = $(window).height();
       $('#wrap').css('display', 'none');
       $('#loader-bg ,#loader').css('display', 'block');
+      $('body').addClass('no-scroll');
     });
 
     $(window).load(function () { //全ての読み込みが完了したら実行
-      $('#loader-bg').delay(900).fadeOut(800);
+      $('#loader-bg').delay(900).fadeOut(800, () => $('body').removeClass('no-scroll'));
       $('#loader').delay(600).fadeOut(300);
       $('#wrap').css('display', 'block');
       var svgClass = document.querySelectorAll('.svg-09,.svg-10,.svg-11,.svg-12,.svg-13,.svg-07,.svg-08,.svg-01,.svg-02,.svg-03,.svg-04,.svg-05,.svg-06');
